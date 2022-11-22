@@ -1,0 +1,93 @@
+@import "./scss/fonts";
+@import "./scss/libraries";
+@import "./scss/variables";
+@import "./scss/mixins";
+@import "./scss/base";
+
+@import "./scss/components/header";
+@import "./scss/components/hero";
+@import "./scss/components/advantages";
+@import "./scss/components/information";
+@import "./scss/components/conditions";
+@import "./scss/components/service";
+@import "./scss/components/response";
+@import "./scss/components/case";
+@import "./scss/components/footer";
+
+.blue-bg-1B4AC5 {
+    background: #1B4AC5;
+}
+.green-bg-00AD6D {
+    background: #00AD6D;
+}
+.orange-bg-E27721 {
+    background: #E27721;
+}
+.purple-bg-5014A2 {
+    background: #5014A2;
+}
+
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-34 {
+    margin-right: 34px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+} 
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.mb-70 {
+    margin-bottom: 60px;
+}
+.mb-436 {
+    margin-bottom: 436px;
+}
+.mw-60 {
+    min-width: 60px;
+}
+.fb-30 {
+    flex-basis: 30%;
+}
+.mw-180 {
+    max-width: 180px;
+}
+
+.pb-104 {
+    padding-bottom: 104px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.footer__social{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer__one + .footer__one{
+    margin-left: 20px;
+}
+.footer__one{
+    max-width: 36px;
+    width: 100%;
+}
+.footer__one img{
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+.um-response {
+    background: #0B1331;
+    padding-top: 58px;
+    padding-bottom: 61px;
+    &__title {
+        margin-bottom: 58px;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+
+        color: #FFFFFF;
+    }
+    &__text {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 143%;
+
+        color: #FFFFFF;
+    }
+    &__item {
+        display: flexbox;
+        flex-direction: column;
+        margin-bottom: 36px;
+        img {
+            margin-bottom: 30px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+
+            color: #FFFFFF;
+        }
+    }
+}

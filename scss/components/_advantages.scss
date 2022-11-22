@@ -1,0 +1,77 @@
+.um-advantages {
+    &__swiper-btn-wrap {
+        position: absolute;
+        width: 184px;
+        right: 0;
+        bottom: 67px
+    }
+}
+
+
+.advantages-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 344px;
+    height: 244px;
+    padding: 28px 16px;
+    background: #000;
+    border-radius: 20px;
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+    &__text {
+        // max-width: 200px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+
+        color: #FFFFFF;
+    }
+}
+
+.swiper-slide:nth-child(1) > .advantages-card {
+    background-color: #00AD6D;
+}
+.swiper-slide:nth-child(2) > .advantages-card {
+    background-color: #DC16FC;
+}
+.swiper-slide:nth-child(3) > .advantages-card {
+    background-color: #E27721;
+}
+.swiper-slide:nth-child(4) > .advantages-card {
+    background-color: #22E5FF;
+}
+.swiper-slide:nth-child(5) > .advantages-card {
+    background-color: #6C0C69 ;
+}
+.swiper-slide:nth-child(6) > .advantages-card {
+    background-color: #451389 ;
+}
+.swiper-slide:nth-child(7) > .advantages-card {
+    background-color: #00AD6D ;
+}
+.swiper-slide:nth-child(8) > .advantages-card {
+    background-color: #1433A2 ;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 76px;
+    height: 76px;
+    background: #FFFFFF;
+    box-shadow: 10.5555px 10.5555px 21.1111px rgba(100, 106, 127, 0.05);
+    border-radius: 58px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 16px;
+    color: #000000;
+}
+

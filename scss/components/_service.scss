@@ -1,0 +1,30 @@
+.um-service {
+    padding-top: 70px;
+}
+
+.um-article {
+    padding: 37px 17px;
+    margin-bottom: 37px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(100, 106, 127, 0.05);
+    border-radius: 40px;
+    &__title {
+        margin-bottom: 95px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        /* or 24px */
+        
+        
+        color: #0B1331;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+        
+        
+        color: #0B1331;
+    }
+}

@@ -1,0 +1,143 @@
+.footer {
+    padding-top: 35px;
+    padding-bottom: 95px;
+    background-color: #0B1331;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+.footer {
+    &__block-1 {
+        margin-bottom: 70px;
+    }
+    
+    &__block-2 {
+        
+    }
+    
+    &__block-3 {
+        
+    }
+}
+
+.f-block {
+    li {
+        margin-bottom: 29px;
+    }
+    &__title {
+        margin-bottom: 27px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 94.5%;
+    }
+    &__text {
+        max-width: 423px;
+        margin-bottom: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+
+
+        color: #FFFFFF;
+    }
+    &__link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 94.5%;
+    }
+}
+
+.f-form {
+    &__input {
+        padding-left: 16px;
+        padding-bottom: 7px;
+        padding-top: 21px;
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.53) !important;
+    }
+    &__btn-send {
+        margin-top: 35px;
+        width: 170px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        /* identical to box height, or 14px */
+
+
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 55px
+    }
+}
+
+.f-menu {
+    margin-bottom: 45px;
+    padding-top: 60px;
+    li {
+        margin-bottom: 18px;
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .footer {
+        .um-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__block-1 {
+            flex-basis: 50%;
+        }
+        
+        &__block-2 {
+            flex-basis: 50%;
+        }
+        
+        &__block-3 {
+            flex-basis: 100%;
+        }
+    }
+    .f-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .f-block {
+        &__title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 94.5%;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+        }
+        &__link {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 94.5%;
+        }
+    }
+  }
+  
+    
+  @media (min-width: $screen-xl) {
+    .footer__block-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .f-menu {
+        flex-basis: 80%;
+    }
+    .f-block {
+        &__title {
+            font-size: 36px;
+        }
+    }
+  }
