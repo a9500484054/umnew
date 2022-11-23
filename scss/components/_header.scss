@@ -85,7 +85,7 @@
 }
 
 
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-md) {
     .header {   
         &__lk-enter {
             margin-right: 65px;
@@ -97,7 +97,7 @@
     }
 }
     
-@media (min-width: $screen-xl) {
+@media (min-width: $screen-lg) {
     .h-about {
         display: flex;
     }
@@ -105,11 +105,11 @@
 
 
 
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-xl) {
 
 }
   
     
-@media (min-width: $screen-xxxl) {
+@media (min-width: $screen-xxl) {
 
 }

@@ -40,3 +40,35 @@
         border-radius: 55px;
     }
 }
+
+// 768px;
+@media (min-width: $screen-md) {
+
+}
+// 992px;
+@media (min-width: $screen-lg) {
+    .um-conditions {
+        padding: 106px 0 148px;
+        &__title {
+            margin-bottom: 51px;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 100%;
+        }
+        &__text {
+            margin-bottom: 51px;
+        }
+    }
+}
+// 1200px
+@media (min-width: $screen-xl) {
+
+}
+// 1400px;
+@media (min-width: $screen-xxl) {
+    .um-conditions {
+        &__title {
+            font-size: 80px;
+        }
+    }
+}

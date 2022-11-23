@@ -84,7 +84,7 @@ input[type="radio"].visually-hidden {
   padding-right: 16px;
 }
 
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-md) {
   .um-container {
     padding-left: 40px;
     padding-right: 40px;
@@ -92,10 +92,26 @@ input[type="radio"].visually-hidden {
 }
 
   
-@media (min-width: $screen-xxxl) {
+@media (min-width: $screen-xl) {
   .um-container {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
   
+// 768px;
+@media (min-width: $screen-md) {
+
+}
+// 992px;
+@media (min-width: $screen-lg) {
+
+}
+// 1200px
+@media (min-width: $screen-xl) {
+
+}
+// 1400px;
+@media (min-width: $screen-xxl) {
+
+}

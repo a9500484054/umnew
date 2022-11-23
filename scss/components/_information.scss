@@ -1,5 +1,7 @@
 .um-information{
     &__text {
+        max-width: 897px;
+        margin: 0 auto;
         padding: 50px 0;
         font-weight: 500;
         font-size: 20px;
@@ -8,4 +10,30 @@
         
         color: #0B1331;
     }
+}
+
+
+// 768px;
+@media (min-width: $screen-md) {
+
+}
+// 992px;
+@media (min-width: $screen-lg) {
+    .um-information {
+        &__text {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 100%;
+            text-align: center;
+            color: #0B1331;
+        }
+    }
+}
+// 1200px
+@media (min-width: $screen-xl) {
+
+}
+// 1400px;
+@media (min-width: $screen-xxl) {
+
 }
