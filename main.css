@@ -889,7 +889,7 @@ input[type=radio].visually-hidden {
   }
 }
 .um-conditions {
-  background-image: url("/images/bg-conditions.jpg");
+  background-image: url("images/bg-conditions.jpg");
   background-size: cover;
   padding: 42px 0 70px;
 }
