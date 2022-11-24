@@ -78,7 +78,11 @@ input[type="radio"].visually-hidden {
 
 .overflow--active {
   overflow: hidden;
-  margin-right: 16px;
+}
+@media (min-width: $screen-xl) {
+  .overflow--active {
+    margin-right: 16px;
+  }
 }
 
 .nowrap {
