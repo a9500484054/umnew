@@ -438,7 +438,7 @@ input[type=radio].visually-hidden {
 }
 .hover--btn-case {
   transition-duration: 0.5s;
-  transition: color 0.5s ease-in 0s, background-color 0.5s step-end 0s;
+  transition: color 0.5s, background-color 0.5s;
 }
 .hover--btn-case:focus, .hover--btn-case:hover {
   color: #fff;
