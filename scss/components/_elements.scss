@@ -64,8 +64,11 @@
 @media (min-width: $screen-lg) {
     .output-blue-information {
         &::after {
-        top: -11px;
-        height: 62px;
+        top: -14px;
+        width: 189px;
+        left: -10px;
+        height: 69px;
+        background-image: url('images/output-blue-information-dest.svg');
         }
     }
 }
@@ -109,10 +112,10 @@
         top: 8px;
         left: -14px;
         display: block;
-        width: 102px;
-        height: 32px;
+        width: 91px;
+        height: 35px;
 
-        background-image: url('images/output-green.svg');
+        background-image: url('images/output-green-response-mob.svg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -122,10 +125,12 @@
 @media (min-width: $screen-lg) {
     .output-green-response {
         &::after {
-            top: 14px;
-            left: -29px;
-            width: 196px;
-            height: 61px;
+            top: 8px;
+            left: -26px;
+            width: 187px;
+            height: 72px;
+
+            background-image: url('images/output-green-response-dest.svg');
         }
     }
 }

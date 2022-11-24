@@ -54,16 +54,16 @@
     <section class="hero">
         <div class="um-container">
             <div class="mb-30">
-                <h2 class="hero__title">Вырасти свой <span class="output-blue-hero">бизнес</span> с помощью наших IT разработок</h2>
+                <h2 class="hero__title">Вырасти свой <span class="output-blue-hero">бизнес</span> <span class="nowrap">с помощью</span> наших IT разработок</h2>
             </div>
             
             <div class="hero__wrap d-md-flex justify-content-md-between">
 
-                <div class="hero__block-1 shadow rounded mb-12 mb-md-0 me-xl-2">
+                <div class="hero__block-1 shadow rounded mb-12 mb-md-0 me-xl-2 white-bg-FBFBFB">
 
                     <div class="d-flex mb-3">
                         <div class="mr-20 mw-60">
-                            <img src="images/info-hero-1.svg" alt="icon">
+                            <img src="images/icon-hero-1.svg" alt="icon">
                         </div>
                         <ul class="mr-34 fb-30 d-flex flex-column justify-content-between">
                             <li class="hero-section-title-text">Количество партнеров</li>
@@ -77,7 +77,7 @@
 
                     <div class="d-flex mb-3">
                         <div class="mr-20 mw-60">
-                            <img src="images/info-hero-2.svg" alt="icon">
+                            <img src="images/icon-hero-2.svg" alt="icon">
                         </div>
                         <ul class="mr-34 fb-30 d-flex flex-column justify-content-between">
                             <li class="hero-section-title-text">Количество транзакций</li>
@@ -91,7 +91,7 @@
 
                     <div class="d-flex mb-3">
                         <div class="mr-20 mw-60">
-                            <img src="images/info-hero-3.svg" alt="icon">
+                            <img src="images/icon-hero-3.svg" alt="icon">
                         </div>
                         <ul class="mr-34 fb-30 d-flex flex-column justify-content-between">
                             <li class="hero-section-title-text">Количество пользователей</li>
@@ -105,7 +105,7 @@
 
                     <div class="d-flex mb-3">
                         <div class="mr-20 mw-60">
-                            <img src="images/info-hero-4.svg" alt="icon">
+                            <img src="images/icon-hero-4.svg" alt="icon">
                         </div>
                         <ul class="mr-34 fb-30 d-flex flex-column justify-content-between">
                             <li class="hero-section-title-text">Количество товаров</li>
@@ -119,7 +119,7 @@
 
                 </div>
 
-                <div class="hero__block-2 shadow rounded d-xl-flex justify-content-xl-center flex-xl-column">
+                <div class="hero__block-2 shadow rounded d-xl-flex justify-content-xl-center flex-xl-column white-bg-FBFBFB ">
 
                     <div class="hero__h-performed-operations h-performed-operations border-bottom d-xl-flex justify-content-xl-between">
                         <div>
@@ -457,7 +457,9 @@
                             <div class="order-lg-1">
                                 <h4 class="case__title-h4">Хотите так же?</h4>
                                 <p class="case__text">Оставляйте заявку на сотрудничество, получайте возможность увеличения потока клиентов и выручки вашего бизнеса</p>
-                                <button class="case__btn">Стать партнером</button>
+                                <button type="button" class="case__btn" data-bs-toggle="modal" data-bs-target="#lidModal">
+                                    Стать партнером
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -501,11 +503,11 @@
                         <p class="lid-modal__text">
                             Оставьте свои контакты, мы с вами свяжемся для обсуждения деталей сотрудничества
                         </p>
-                        <div class="lid-modal__form">
+                        <div class="lid-modal__form f-form">
                             <form action="#" class="d-flex flex-column f-form align-items-start">
-                                <input class="f-form__input border-bottom" type="text" placeholder="Имя" name="name">
-                                <input class="f-form__input border-bottom" type="text" placeholder="Email" name="email">
-                                <input class="f-form__input border-bottom" type="text" placeholder="Сообщение" name="messenge">
+                                <input class="f-form__input f-form__input--width border-bottom" type="text" placeholder="Имя" name="name">
+                                <input class="f-form__input f-form__input--width border-bottom" type="text" placeholder="Email" name="email">
+                                <input class="f-form__input f-form__input--width border-bottom" type="text" placeholder="Сообщение" name="messenge">
                                 <!-- <button class="f-form__btn-send" type="submit">Отправить</button> -->
                                 <button class="f-form__btn-send" type="button" data-bs-toggle="modal" data-bs-target="#thankYouModal">Отправить</button>
                             </form>
@@ -547,9 +549,8 @@
                 </li>
                 <li>
                     <form action="#" class="d-flex flex-column f-form align-items-start">
-                        <input class="f-form__input border-bottom" type="text" placeholder="Email" name="email">
+                        <input class="f-form__input border-bottom mb-4" type="text" placeholder="Email" name="email">
                         <input class="f-form__input border-bottom" type="text" placeholder="Сообщение" name="messenge">
-                        <!-- <button class="f-form__btn-send" type="submit">Отправить</button> -->
                         <button class="f-form__btn-send" type="button" data-bs-toggle="modal" data-bs-target="#thankYouModal">Отправить</button>
                     </form>
                 </li>

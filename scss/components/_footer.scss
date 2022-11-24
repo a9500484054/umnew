@@ -1,8 +1,6 @@
 .footer {
     position: relative;
     padding-top: 50px;
-    // margin-bottom: 95px;
-    // background-color: #0B1331;
     background-image: url('images/bg-footer.svg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -13,20 +11,6 @@
     a {
         color: #fff;
     }
-    // &::before {
-    //     content: "";
-
-    //     position: absolute;
-    //     top: -68px;
-    //     left: 0;
-
-    //     display: block;
-    //     width: 100%;
-    //     height: 68px;
-
-    //     background-color: #0B1331;
-    //     border-radius: ;
-    // }
 }
 .footer {
     &__block-1 {
@@ -72,6 +56,8 @@
 
 .f-form {
     &__input {
+        width: 70%;
+        color: #FFFFFF;
         padding-left: 16px;
         padding-bottom: 7px;
         padding-top: 21px;
@@ -94,6 +80,9 @@
         color: #FFFFFF;
         border: 2px solid #FFFFFF;
         border-radius: 55px
+    }
+    &__input--width {
+        width: 100%;
     }
 }
 
@@ -147,6 +136,11 @@
             line-height: 94.5%;
         }
     }
+        .f-form {
+            &__input--width {
+                width: 327px;
+            }
+        }
 }
 // 992px;
 @media (min-width: $screen-lg) {
@@ -165,6 +159,7 @@
             font-size: 36px;
         }
     }
+
 }
 
 // 1200px
@@ -172,8 +167,21 @@
     .footer {
         padding-top: 127px;
     }
+    .f-form {
+        &__input {
+            width: 60%;
+        }
+        &__input--width {
+            width: 327px;
+        }
+    }
 }
 // 1400px;
 @media (min-width: $screen-xxl) {
+    .footer {
+        &__block-2 {
+            flex-basis: 30%;
+        }
+    }
 
 }

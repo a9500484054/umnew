@@ -17,6 +17,7 @@
 
 .h-about {
     margin-left: auto;
+    // margin-right: 156px;
     li {
         margin-right: 34px;
     }
@@ -99,8 +100,14 @@
 }
     
 @media (min-width: $screen-lg) {
+    .header {  
+        &__lk-enter {
+            margin-left: 0;
+        }
+    }
     .h-about {
         display: flex;
+        margin-right: 8%;
     }
 }
 
