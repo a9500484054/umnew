@@ -1,8 +1,15 @@
 .um-information{
-    &__text {
-        max-width: 897px;
-        margin: 0 auto;
+    .um-container {
         padding: 50px 0;
+        background-image: url('/images/bg-circle.png');
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: 94px 20%;
+        background-position: right bottom;
+    }
+    &__text {
+        max-width: 491px;
+        margin: 0 auto;
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
@@ -15,12 +22,21 @@
 
 // 768px;
 @media (min-width: $screen-md) {
-
+    .um-information{
+        padding: 100px 0 120px;
+    }
 }
 // 992px;
 @media (min-width: $screen-lg) {
     .um-information {
+        .um-container {
+            padding: 150px 0 170px;
+            background-size: 618px;
+            background-position: 94px 20%;
+            background-position: right -34px;
+        }
         &__text {
+            max-width: 897px;
             font-weight: 500;
             font-size: 36px;
             line-height: 100%;
@@ -31,7 +47,13 @@
 }
 // 1200px
 @media (min-width: $screen-xl) {
-
+    .um-information{
+        .um-container {
+            padding: 200px 0 220px;
+            background-position: right 112px;
+        }
+        
+    }
 }
 // 1400px;
 @media (min-width: $screen-xxl) {

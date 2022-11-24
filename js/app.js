@@ -15,4 +15,10 @@ var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30
         }
     },
-  });
+});
+
+
+document.querySelector('.menu-burger').addEventListener('click', ()=> {
+    document.querySelector('.main-menu').classList.toggle('main-menu--active');
+    document.body.classList.toggle('overflow--active');
+});

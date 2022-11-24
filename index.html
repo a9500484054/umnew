@@ -26,19 +26,21 @@
     <header class="header">
         <div class="um-container d-flex align-items-center justify-content-between pt-4">
 
-            <a class="header__logo" href="#">
+            <a class="header__logo" href="index.html">
                 <img src="images/logo.svg" alt="unitedmarket.org">
             </a>
 
             <ul class="header__about h-about">
-                <li><a href="#">Возможности</a></li>
-                <li><a href="#">Условия</a></li>
-                <li><a href="#">Кейс</a></li>
+                <li><a href="#um-advantages">Возможности</a></li>
+                <li><a href="#um-response">Условия</a></li>
+                <li><a href="#um-case">Кейс</a></li>
             </ul>
 
             <a class="header__lk-enter lk-enter" href="#">Войти</a>
 
-            <button class="header__h-feedback h-feedback">Стать партнером</button>
+            <button type="button" class="header__h-feedback h-feedback" data-bs-toggle="modal" data-bs-target="#lidModal">
+                Стать партнером
+            </button>
 
             <button class="header__menu-burger menu-burger blue-bg-1B4AC5 d-flex flex-column justify-content-center align-items-center">
                 <span></span>
@@ -47,16 +49,17 @@
             </button>
         </div>
     </header>
+
     
-     <section class="hero mb-70">
+    <section class="hero">
         <div class="um-container">
             <div class="mb-30">
-                <h2 class="hero__title">Вырасти свой бизнес с помощью наших IT разработок</h2>
+                <h2 class="hero__title">Вырасти свой <span class="output-blue-hero">бизнес</span> с помощью наших IT разработок</h2>
             </div>
             
-            <div class="hero__wrap">
+            <div class="hero__wrap d-md-flex justify-content-md-between">
 
-                <div class="hero__block-1 shadow rounded mb-12 ">
+                <div class="hero__block-1 shadow rounded mb-12 mb-md-0 me-xl-2">
 
                     <div class="d-flex mb-3">
                         <div class="mr-20 mw-60">
@@ -116,9 +119,9 @@
 
                 </div>
 
-                <div class="hero__block-2 shadow rounded">
+                <div class="hero__block-2 shadow rounded d-xl-flex justify-content-xl-center flex-xl-column">
 
-                    <div class="hero__h-performed-operations h-performed-operations border-bottom d-md-flex justify-content-md-between">
+                    <div class="hero__h-performed-operations h-performed-operations border-bottom d-xl-flex justify-content-xl-between">
                         <div>
                             <div class="h-performed-operations__key">f6904e10911...62015b92223</div>
                             <div class="h-performed-operations__ago-time">6 sec ago</div>
@@ -136,7 +139,7 @@
                         <div class="h-performed-operations__lead-time">0,004</div>
                     </div>
 
-                    <div class="hero__h-performed-operations h-performed-operations border-bottom d-md-flex justify-content-md-between">
+                    <div class="hero__h-performed-operations h-performed-operations border-bottom d-xl-flex justify-content-xl-between">
                         <div>
                             <div class="h-performed-operations__key">f6904e10911...62015b92223</div>
                             <div class="h-performed-operations__ago-time">6 sec ago</div>
@@ -154,7 +157,7 @@
                         <div class="h-performed-operations__lead-time">0,004</div>
                     </div>
 
-                    <div class="hero__h-performed-operations h-performed-operations border-bottom d-md-flex justify-content-md-between">
+                    <div class="hero__h-performed-operations h-performed-operations border-bottom d-xl-flex justify-content-xl-between mb-0">
                         <div>
                             <div class="h-performed-operations__key">f6904e10911...62015b92223</div>
                             <div class="h-performed-operations__ago-time">6 sec ago</div>
@@ -176,14 +179,14 @@
 
             </div>
         </div>
-     </section>
+    </section>
 
     <main>
 
-        <section class="um-advantages">
+        <section class="um-advantages" id="um-advantages">
             <div class="um-container">
                 <div class="mb-40">
-                    <h2 class="um-advantages__title">Что вы получите, сотрудничая с нами</h2>
+                    <h2 class="um-advantages__title">Что вы <span class="el-border-bottom"> получите</span>, сотрудничая с нами</h2>
                 </div>
                 <!-- Slider main container -->
                 <div class="swiper mySwiper">
@@ -252,7 +255,7 @@
         <section class="um-information">
             <div class="um-container">
                 <p class="um-information__text">
-                    United Market – интернет-платформа для электронной коммерции, созданная с применением блокчейн технологии. Используя нашу платформу, вы сможете быстро создать интернет-магазин, наполнить его товарами, привязать домен, развивать сайт и продавать товары и услуги онлайн.
+                    United Market – интернет-платформа для электронной коммерции, созданная с применением <span class="output-blue-information">блокчейн</span> технологии. Используя нашу платформу, вы сможете быстро создать интернет-магазин, наполнить его товарами, привязать домен, развивать сайт и продавать товары и услуги онлайн.
                 </p>
             </div>
         </section>
@@ -263,7 +266,9 @@
                     Мы полностью отвечаем за сопровождение вашего бизнеса в интернете
                 </h3>
                 <p class="um-conditions__text">От стратегии развития до рекламных кампаний</p>
-                <button class="um-conditions__btn">Стать партнером</button>
+                <button type="button" class="um-conditions__btn" data-bs-toggle="modal" data-bs-target="#lidModal">
+                    Стать партнером
+                </button>
             </div>
         </section>
 
@@ -271,14 +276,14 @@
             <div class="service-container-grid um-container mb-60 d-md-flex flex-wrap justify-content-md-between">
 
                 <div class="block-1 um-service__um-article um-article">
-                    <h3 class="um-article__title">Разработка стратегии развития вашего бизнеса</h3>
+                    <h3 class="um-article__title">Разработка <span class="output-green-service">стратегии</span> развития вашего бизнеса</h3>
                     <p class="um-article__text">Анализ конкурентов, составление портрета ЦА, развитие социальных сетей: прогрев аудитории, план постов, тексты, сценарии для видео роликов, разработка CJM, рекламные каналы и т.д.</p>
                 </div>
                 <div class="block-2 um-service__um-article um-article">
                     <h3 class="um-article__title">Техническая поддержка вашего сайта</h3>
                     <p class="um-article__text">При создании или переносе вашего сайта на нашу CMS мы оказываем всю необходимую техническую поддержку: обслуживание хостинга, защиту от взлома, устранение багов и т.д.</p>
                 </div>
-                <div class="block-3 um-service__um-article um-article">
+                <div class="block-3 um-service__um-article um-article elem-circle">
                     <h3 class="um-article__title">Автоматическое обновление новых функций</h3>
                     <p class="um-article__text">Наша команда дизайнеров и разработчиков постоянно создают новые функции для продуктивной работы вашего сайта: новые шаблоны, реферальная программа, кабинет маркетинга и рекламы, CRM и другие.</p>
                 </div>
@@ -287,7 +292,7 @@
                     <p class="um-article__text">Мы настроим Яндекс Директ, ВК, Telegram, Авито, MyTarget и их обеспечим дальнейшее сопровождение.Составляем список ключевых фраз, готовим тексты и баннеры для рекламных объявлений, система аналитики, тестирование, анализ и корректировки.</p>
                 </div>
                 <div class="block-5 um-service__um-article um-article">
-                    <h3 class="um-article__title mw-100">Интеграция с маркетплейсами</h3>
+                    <h3 class="um-article__title mw-100">Интеграция с   <span class="el-border-bottom el-border-bottom--bottom">маркетплейсами</span></h3>
                     <div>
                         <p class="um-article__text">
                             Чтобы разместить товары на маркетплейс, предпринимателю приходится вносить информацию о товарах в учетную систему, а потом дублировать ее в своем личном кабинете на онлайн-площадке. А если таких онлайн-площадок несколько? На это уходит много времени, когда продаж становится много трудно контролировать бизнес-процессы и не допускать ошибок.
@@ -306,24 +311,24 @@
             </div>
         </section>
         
-        <section class="um-response">
+        <section class="um-response" id="um-response">
             <div class="um-container">
                 <div >
-                    <h2 class="um-response__title">Что мы ждем от вас</h2>
+                    <h2 class="um-response__title">Что мы ждем от <span class="output-green-response">вас</span></h2>
                 </div>
 
                 <p class="um-response__text">
                     Полная вовлеченность в процессы своего бизнеса, желание и возможность развиваться вместе с нами
                 </p>
 
-                <ul class="um-response__list d-md-flex flex-wrap justify-content-md-between">
+                <ul class="um-response__list d-md-flex flex-wrap flex-xl-nowrap justify-content-md-between">
                     <li class="um-response__item">
                         <img src="images/response-hero-1.svg" alt="">
                         <p>Загрузка карточек товаров и актуализация ассортимента</p>
                     </li>
                     <li class="um-response__item">
                         <img src="images/response-hero-2.svg" alt="">
-                        <p>Установка интернет-эквайринга, обязательное наличие рекламного бюджета</p>
+                        <p>Установка интернет-эквайринга, <span class="green-color-00AD6D">обязательное наличие рекламного бюджета</span></p>
                     </li>
                     <li class="um-response__item">
                         <img src="images/response-hero-3.svg" alt="">
@@ -337,14 +342,14 @@
             </div>
         </section>
 
-        <section class="um-case mb-436">
+        <section class="um-case" id="um-case">
             <div class="um-container">
 
                 <div class="mb-40">
-                    <h2 class="um-container__title">Кейс. CMS United Market для магазина Цветочный дом в г. Сочи</h2>
+                    <h2 class="um-case__title">Кейс. CMS United Market для магазина <span class="el-border-response nowrap">Цветочный дом</span> в г. Сочи</h2>
                 </div>
 
-                <div>
+                <div class="um-case__wrap d-lg-flex flex-wrap justify-content-between">
 
                     <div class="um-case__item case green-bg-00AD6D">
                         <h3 class="case__title">На CMS United Market</h3>
@@ -378,14 +383,14 @@
                                 <li class="case__text-2">чат-окно на сайте для онлайн общения с клиентами</li>
                             </ul>
                         </div>
-                        <div class="row mb-60">
+                        <div class="row mb-60 mb-md-121">
                             <ul class="col-6">
                                 <li class="case__text-1">Продвижение</li>
                                 <li class="case__text-2">Яндекс Директ, рассылки</li>
                             </ul>
                             <ul class="col-6">
                                 <li class="case__text-1">Выручка</li>
-                                <li class="case__text-2 fs-28">163 025 ₽</li>
+                                <li class="case__text-2 fs-24 fs-md-28">163 025 ₽</li>
                             </ul>
                         </div>
                         <div class="d-flex justify-content-end">
@@ -425,14 +430,14 @@
                                 <li class="case__text-2">Отсутствует</li>
                             </ul>
                         </div>
-                        <div class="row mb-60">
+                        <div class="row mb-60 mb-md-121">
                             <ul class="col-6">
                                 <li class="case__text-1">Продвижение</li>
                                 <li class="case__text-2">Яндекс Директ, ВК бизнес, 2Гис</li>
                             </ul>
                             <ul class="col-6">
                                 <li class="case__text-1">Выручка</li>
-                                <li class="case__text-2 fs-28">0 ₽</li>
+                                <li class="case__text-2 fs-24 fs-md-28">0 ₽</li>
                             </ul>
                         </div>
                         <div class="d-flex justify-content-end">
@@ -442,14 +447,20 @@
 
                     <div class="um-case__item case purple-bg-5014A2">
                         <h3 class="case__title">Сайт на CMS United Market более удобен для покупателя, что повышает конверсию и выручку для продавца</h3>
-                        <picture>
-                            <img class="case__img" src="images/static-mob.jpg" alt="">
-                        </picture>
-                        <h4 class="case__title-h4">Хотите так же?</h4>
-                        <p class="case__text">Оставляйте заявку на сотрудничество, получайте возможность увеличения потока клиентов и выручки вашего бизнеса</p>
-                        <button class="case__btn">Стать партнером</button>
+                        <div class="case__stats-wrap d-lg-flex justify-content-lg-between">
+                            <div class="order-lg-2">
+                                <picture>
+                                    <source srcset="images/static-dest.png" media="(min-width: 768px)">
+                                    <img class="case__img" src="images/static-mob.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="order-lg-1">
+                                <h4 class="case__title-h4">Хотите так же?</h4>
+                                <p class="case__text">Оставляйте заявку на сотрудничество, получайте возможность увеличения потока клиентов и выручки вашего бизнеса</p>
+                                <button class="case__btn">Стать партнером</button>
+                            </div>
+                        </div>
                     </div>
-
 
                 </div>
                 
@@ -457,6 +468,72 @@
         </section>
 
     </main>
+
+    <section class="main-menu">
+        <div class="um-container">
+            <ul class="main-menu__list">
+                <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="https://unitedmarket.org/">Главная</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="https://unitedmarket.org/info/o-nas">О нас</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="https://unitedmarket.org/partner">Новым партнерам</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="https://unitedmarket.org/investor_page">Инвесторам</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="https://unitedmarket.org/info/dejstvuyushim-partneram">Wiki</a></li>
+            </ul>
+            
+            <button type="button" class="main-menu__btn h-feedback" data-bs-toggle="modal" data-bs-target="#lidModal">
+                Стать партнером
+            </button>
+            
+        </div>
+    </section>
+
+    <!-- Модальное окно Заявки -->
+    <section class="modal fade lid-modal" id="lidModal" tabindex="-1" aria-labelledby="lidModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="lid-modal__btn-close btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="lid-modal__content">
+                        <h3 class="lid-modal__title">
+                            Заявка на сотрудничество
+                        </h3>
+                        <p class="lid-modal__text">
+                            Оставьте свои контакты, мы с вами свяжемся для обсуждения деталей сотрудничества
+                        </p>
+                        <div class="lid-modal__form">
+                            <form action="#" class="d-flex flex-column f-form align-items-start">
+                                <input class="f-form__input border-bottom" type="text" placeholder="Имя" name="name">
+                                <input class="f-form__input border-bottom" type="text" placeholder="Email" name="email">
+                                <input class="f-form__input border-bottom" type="text" placeholder="Сообщение" name="messenge">
+                                <!-- <button class="f-form__btn-send" type="submit">Отправить</button> -->
+                                <button class="f-form__btn-send" type="button" data-bs-toggle="modal" data-bs-target="#thankYouModal">Отправить</button>
+                            </form>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно Благодарности -->
+    <section class="modal fade thank-modal" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="thank-modal__btn-close btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center">
+                    <div class="thank-modal__content">
+                        <p class="thank-modal__text w-75 m-auto">
+                            Спасибо, Ваша заявка принята!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="um-container">
@@ -472,12 +549,13 @@
                     <form action="#" class="d-flex flex-column f-form align-items-start">
                         <input class="f-form__input border-bottom" type="text" placeholder="Email" name="email">
                         <input class="f-form__input border-bottom" type="text" placeholder="Сообщение" name="messenge">
-                        <button class="f-form__btn-send" type="submit">Отправить</button>
+                        <!-- <button class="f-form__btn-send" type="submit">Отправить</button> -->
+                        <button class="f-form__btn-send" type="button" data-bs-toggle="modal" data-bs-target="#thankYouModal">Отправить</button>
                     </form>
                 </li>
             </ul>
 
-            <ul class="footer__block-2 f-block">
+            <ul class="footer__block-2 f-block text-md-end text-xxl-start">
                 <li>
                     <h3 class="f-block__title">Контакты</h3>
                 </li>
@@ -492,11 +570,11 @@
             <div class="footer__block-3 f-block-bottom border-top mt-45">
 
                 <ul class="footer_menu f-menu">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новым партнерам</a></li>
-                    <li><a href="#">Инвесторам</a></li>
-                    <li><a href="#">Wiki</a></li>
-                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="https://unitedmarket.org/info/o-nas">О нас</a></li>
+                    <li><a href="https://unitedmarket.org/partner">Новым партнерам</a></li>
+                    <li><a href="https://unitedmarket.org/investor_page">Инвесторам</a></li>
+                    <li><a href="https://unitedmarket.org/info/dejstvuyushim-partneram">Wiki</a></li>
+                    <li><a href="https://unitedmarket.org/info/politika-konfidencialnosti">Политика конфиденциальности</a></li>
                 </ul>
 
                 <ul class="footer__social mw-180 justify-content-between">

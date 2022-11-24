@@ -12,6 +12,9 @@
 @import "./scss/components/service";
 @import "./scss/components/response";
 @import "./scss/components/case";
+@import "./scss/components/menu";
+@import "./scss/components/modals";
+@import "./scss/components/elements";
 @import "./scss/components/footer";
 
 .blue-bg-1B4AC5 {
@@ -19,6 +22,9 @@
 }
 .green-bg-00AD6D {
     background: #00AD6D;
+}
+.green-color-00AD6D {
+    color: #00AD6D;
 }
 .orange-bg-E27721 {
     background: #E27721;
@@ -75,6 +81,9 @@
     padding-top: 40px;
 }
 
+.fs-24 {
+    font-size: 24px;
+}
 .fs-28 {
     font-size: 28px;
 }
@@ -93,4 +102,15 @@
 }
 .footer__one img{
     width: 100%;
+}
+
+
+// 768px;
+@media (min-width: $screen-md) {
+    .mb-md-121 {
+        margin-bottom: 121px;
+    }
+    .fs-md-28 {
+        font-size: 28px;
+    }
 }

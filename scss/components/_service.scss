@@ -1,5 +1,6 @@
 .um-service {
-    padding-top: 70px;
+    padding-top: 86px;
+    padding-bottom: 70px;
     &__um-article {
         flex-basis: 45%;
     }
@@ -25,6 +26,7 @@
         color: #0B1331;
     }
     &__text {
+        max-width: 602px;
         font-weight: 400;
         font-size: 16px;
         line-height: 120%;
@@ -37,11 +39,15 @@
 
 // 768px;
 @media (min-width: $screen-md) {
-
+    .um-service {
+        padding-bottom: 120px;
+    }
 }
 // 992px;
 @media (min-width: $screen-lg) {
-
+    .um-service {
+        padding-bottom: 160px;
+    }
 }
 // 1200px
 @media (min-width: $screen-xl) {
@@ -64,6 +70,10 @@
 
 // 1200px
 @media (min-width: $screen-xl) {
+    .um-service {
+        padding-bottom: 200px;
+    }
+
     .um-article {
         padding: 36px;
         &__title {
