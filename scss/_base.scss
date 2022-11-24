@@ -93,15 +93,12 @@ input[type="radio"].visually-hidden {
   padding-left: 16px;
   padding-right: 16px;
 }
-
 @media (min-width: $screen-md) {
   .um-container {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-
-  
 @media (min-width: $screen-xl) {
   .um-container {
     padding-left: 80px;
@@ -109,22 +106,53 @@ input[type="radio"].visually-hidden {
   }
 }
   
-// 768px;
-@media (min-width: $screen-md) {
 
+
+.hover {
+  &--btn-header {
+    transition-duration: .5s;
+    &:focus,
+    &:hover {
+      color: #FFFFFF; 
+      background-color: #1B4AC5;
+    }
+    &:active {
+      opacity: .6;
+    }
+  }
+  &--link {
+    transition-duration: .5s;
+    &:focus,
+    &:hover {
+        color: #1B4AC5; 
+    }
+    &:active {
+      opacity: .6;
+    }
+  }
+  &--btn-conditions {
+    transition-duration: .5s;
+    &:focus,
+    &:hover {
+        background: #0069FF; 
+    }
+    &:active {
+      opacity: .6;
+    }
+  }
+  &--btn-case {
+    transition-duration: .5s;
+    transition: color .5s ease-in 0s,
+                background-color .5s step-end 0s;
+    &:focus,
+    &:hover {
+      color: #fff; 
+      background-color: #1B4AC5;
+      border-color: #1B4AC5;
+    }
+    &:active {
+      opacity: .6;
+    }
+  }
 }
-// 992px;
-@media (min-width: $screen-lg) {
-
-}
-// 1200px
-@media (min-width: $screen-xl) {
-
-}
-// 1400px;
-@media (min-width: $screen-xxl) {
-
-}
-
-
 

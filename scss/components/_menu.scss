@@ -1,4 +1,5 @@
 .main-menu {
+    background: #FBFBFB;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -43,6 +44,7 @@
     &--active {
         padding: 50px 0 50px 0;
         height: calc(100vh - 75px);
+        background: #FBFBFB;
     }
 }
 // 768px;
@@ -54,6 +56,15 @@
         }
         &__link {
             font-size: 48px;
+            &--active {
+                &::after {
+                    top: -10px;
+                    left: -22px;
+                    display: block;
+                    width: 123%;
+                    height: 75px;
+                }
+            }
         }
         &__btn {
             display: none;
@@ -69,6 +80,15 @@
         }
         &__link {
             font-size: 60px;
+            &--active {
+                &::after {
+                    top: -14px;
+                    left: -22px;
+                    display: block;
+                    width: 123%;
+                    height: 94px;
+                }
+            }
         }
         &__h-feedback {
         }
@@ -83,6 +103,15 @@
         }
         &__link {
             font-size: 72px;
+            &--active {
+                &::after {
+                    top: -17px;
+                    left: -29px;
+                    display: block;
+                    width: 122%;
+                    height: 112px;
+                }
+            }
         }
         &__h-feedback {
         }
@@ -97,6 +126,15 @@
         }
         &__link {
             font-size: 100px;
+            &--active {
+                &::after {
+                    top: -22px;
+                    left: -48px;
+                    display: block;
+                    width: 122%;
+                    height: 156px;
+                }
+            }
         }
         &__h-feedback {
         }
