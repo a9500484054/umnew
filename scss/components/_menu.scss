@@ -1,5 +1,4 @@
 .main-menu {
-    background: #FBFBFB;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -7,9 +6,10 @@
     position: absolute;
     top: 75px;
     left: 0;
-    background-color: #fff;
-    
+    background-color: #FBFBFB;
+    transition: height .5s;
     &__list {
+        margin-top: 50px;
         margin-bottom: 56px;
     }
     &__item {
@@ -29,22 +29,20 @@
                 content: "";
         
                 position: absolute;
-                top: -6px;
-                left: -12px;
+                bottom: 0;
+                left: -2px;
                 display: block;
-                width: 116%;
-                height: 53px;
+                width: 108%;
+                height: 6px;
         
-                background-image: url('images/output-green.svg');
+                background-image: url('images/border-bottom-green.svg');
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100%;
             }
         }
     }
     &--active {
-        padding: 50px 0 50px 0;
         height: calc(100vh - 75px);
-        background: #FBFBFB;
     }
 }
 // 768px;
@@ -58,11 +56,7 @@
             font-size: 48px;
             &--active {
                 &::after {
-                    top: -10px;
-                    left: -22px;
-                    display: block;
-                    width: 123%;
-                    height: 75px;
+
                 }
             }
         }
@@ -82,11 +76,7 @@
             font-size: 60px;
             &--active {
                 &::after {
-                    top: -14px;
-                    left: -22px;
-                    display: block;
-                    width: 123%;
-                    height: 94px;
+    
                 }
             }
         }
@@ -105,11 +95,11 @@
             font-size: 72px;
             &--active {
                 &::after {
-                    top: -17px;
-                    left: -29px;
+                    bottom: 0;
+                    left: -16px;
                     display: block;
-                    width: 122%;
-                    height: 112px;
+                    width: 124%;
+                    height: 11px;
                 }
             }
         }
@@ -128,11 +118,8 @@
             font-size: 100px;
             &--active {
                 &::after {
-                    top: -22px;
-                    left: -48px;
-                    display: block;
-                    width: 122%;
-                    height: 156px;
+                    width: 124%;
+                    height: 15px;
                 }
             }
         }

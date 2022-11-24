@@ -382,6 +382,7 @@ input[type=radio].visually-hidden {
 
 .overflow--active {
   overflow: hidden;
+  margin-right: 16px;
 }
 
 .nowrap {
@@ -437,7 +438,6 @@ input[type=radio].visually-hidden {
   opacity: 0.6;
 }
 .hover--btn-case {
-  transition-duration: 0.5s;
   transition: color 0.5s, background-color 0.5s;
 }
 .hover--btn-case:focus, .hover--btn-case:hover {
@@ -447,6 +447,15 @@ input[type=radio].visually-hidden {
 }
 .hover--btn-case:active {
   opacity: 0.6;
+}
+.hover--social {
+  transition-duration: 0.5s;
+}
+.hover--social:focus, .hover--social:hover {
+  opacity: 0.6;
+}
+.hover--social:active {
+  opacity: 0.3;
 }
 
 .header {
@@ -513,8 +522,11 @@ input[type=radio].visually-hidden {
 }
 .menu-burger--active span {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 19px;
+  left: 12px;
+}
+.menu-burger--active span:nth-child(2) {
+  display: none;
 }
 .menu-burger--active span:first-child {
   transform: rotate(45deg);
@@ -908,6 +920,7 @@ input[type=radio].visually-hidden {
   .advantages-card {
     max-width: 717px;
     height: 406px;
+    padding-top: 64px;
   }
   .advantages-card__title {
     max-width: 338px;
@@ -1386,16 +1399,17 @@ input[type=radio].visually-hidden {
   }
 }
 .main-menu {
-  background: #FBFBFB;
   width: 100%;
   height: 0;
   overflow: hidden;
   position: absolute;
   top: 75px;
   left: 0;
-  background-color: #fff;
+  background-color: #FBFBFB;
+  transition: height 0.5s;
 }
 .main-menu__list {
+  margin-top: 50px;
   margin-bottom: 56px;
 }
 .main-menu__item {
@@ -1415,31 +1429,22 @@ input[type=radio].visually-hidden {
 .main-menu__link--active::after {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -12px;
+  bottom: 0;
+  left: -2px;
   display: block;
-  width: 116%;
-  height: 53px;
-  background-image: url("images/output-green.svg");
+  width: 108%;
+  height: 6px;
+  background-image: url("images/border-bottom-green.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 .main-menu--active {
-  padding: 50px 0 50px 0;
   height: calc(100vh - 75px);
-  background: #FBFBFB;
 }
 
 @media (min-width: 768px) {
   .main-menu__link {
     font-size: 48px;
-  }
-  .main-menu__link--active::after {
-    top: -10px;
-    left: -22px;
-    display: block;
-    width: 123%;
-    height: 75px;
   }
   .main-menu__btn {
     display: none;
@@ -1449,24 +1454,17 @@ input[type=radio].visually-hidden {
   .main-menu__link {
     font-size: 60px;
   }
-  .main-menu__link--active::after {
-    top: -14px;
-    left: -22px;
-    display: block;
-    width: 123%;
-    height: 94px;
-  }
 }
 @media (min-width: 1200px) {
   .main-menu__link {
     font-size: 72px;
   }
   .main-menu__link--active::after {
-    top: -17px;
-    left: -29px;
+    bottom: 0;
+    left: -16px;
     display: block;
-    width: 122%;
-    height: 112px;
+    width: 124%;
+    height: 11px;
   }
 }
 @media (min-width: 1400px) {
@@ -1474,11 +1472,8 @@ input[type=radio].visually-hidden {
     font-size: 100px;
   }
   .main-menu__link--active::after {
-    top: -22px;
-    left: -48px;
-    display: block;
-    width: 122%;
-    height: 156px;
+    width: 124%;
+    height: 15px;
   }
 }
 .lid-modal .modal-dialog {
@@ -1604,6 +1599,64 @@ input[type=radio].visually-hidden {
     height: 149px;
   }
 }
+.output-green-advantages {
+  position: relative;
+}
+.output-green-advantages::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -14px;
+  display: block;
+  width: 87px;
+  height: 45px;
+  background-image: url("images/output-green-advantages-mob.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: 1200px) {
+  .output-green-advantages::after {
+    top: 1px;
+    width: 116px;
+    left: -11px;
+    height: 69px;
+    background-image: url("images/output-green-advantages-dest.svg");
+  }
+}
+.output-blue-advantages {
+  position: relative;
+}
+.output-blue-advantages::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -7px;
+  display: block;
+  width: 147px;
+  height: 55px;
+  background-image: url("images/output-blue-advantages-mob.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: 1200px) {
+  .output-blue-advantages::after {
+    top: -41px;
+    left: -11px;
+    width: 241px;
+    height: 96px;
+    background-image: url("images/output-blue-advantages-dest.svg");
+  }
+}
+@media (min-width: 1400px) {
+  .output-blue-advantages::after {
+    top: -44px;
+    left: -11px;
+    width: 269px;
+    height: 118px;
+  }
+}
 .output-blue-information {
   position: relative;
 }
@@ -1701,12 +1754,32 @@ input[type=radio].visually-hidden {
 
 @media (min-width: 1200px) {
   .el-border-bottom::after {
+    bottom: -9px;
+    left: -12px;
+    display: block;
+    width: 110%;
     height: 13px;
   }
   .el-border-bottom--bottom::after {
     bottom: -12px;
   }
 }
+.el-border-advantages {
+  position: relative;
+}
+.el-border-advantages::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 3px;
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-image: url("images/border-bottom-purple.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .el-border-response {
   position: relative;
 }
@@ -1724,7 +1797,11 @@ input[type=radio].visually-hidden {
 }
 
 @media (min-width: 1200px) {
-  .el-border-bottom::after {
+  .el-border-response::after {
+    bottom: -9px;
+    left: -12px;
+    display: block;
+    width: 110%;
     height: 13px;
   }
 }

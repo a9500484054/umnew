@@ -20,5 +20,8 @@ var swiper = new Swiper(".mySwiper", {
 
 document.querySelector('.menu-burger').addEventListener('click', ()=> {
     document.querySelector('.main-menu').classList.toggle('main-menu--active');
+    document.querySelector('.menu-burger').classList.toggle('menu-burger--active');
     document.body.classList.toggle('overflow--active');
+    console.log(window.innerWidth);
+    
 });

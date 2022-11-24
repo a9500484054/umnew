@@ -18,7 +18,6 @@
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="css/um-icon-style.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -191,52 +190,58 @@
                 </div>
                 <!-- Slider main container -->
                 <div class="swiper mySwiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
+                    <!-- Additional required wrapper --> 
+                    <div class="swiper-wrapper"> 
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="advantages-card">
-                                <h3 class="advantages-card__title">Индивидуальный сайт</h3>
+                                <h3 class="advantages-card__title d-inline-block">Индивидуальный <span class="output-green-advantages">сайт</span></h3>
                                 <p class="advantages-card__text">У вас есть уникальная возможность создать свой сайт: заполните информацию о магазине, привяжите свой домен</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="advantages-card">
-                                <h3 class="advantages-card__title">Наша команда – ваша команда</h3>
+                                <h3 class="advantages-card__title d-inline-block">Наша команда – <span class="el-border-advantages">ваша</span> команда</h3>
                                 <p class="advantages-card__text">С Вами будет работать команда профессионалов: Программисты, дизайнеры, маркетологи, менеджеры по продажам</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="advantages-card">
-                                <h3 class="advantages-card__title">Интеграция 
-                                    с мессенджерами</h3>
+                                <h3 class="advantages-card__title">Интеграция с мессенджерами</h3>
                                 <p class="advantages-card__text">Получайте заказы с сайта и общайтесь с клиентами напрямую в мессенджере</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="advantages-card">
-                                <h3 class="advantages-card__title">Маркетинг</h3>
+                                <h3 class="advantages-card__title output-blue-advantages">Маркетинг</h3>
                                 <p class="advantages-card__text">В личном кабинете у нашего партнера будет возможность пополнить баланс для продвижения своего интренет-магазина в Яндекс директ, Google Ads, Вконтакте и т.д.</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="advantages-card">
                                 <h3 class="advantages-card__title">Интеграция с маркетплейсами</h3>
                                 <p class="advantages-card__text">Одной кнопкой управляйте возможностью размещения товаров сразу на нескольких маркетплейсах</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="advantages-card">
                                 <h3 class="advantages-card__title">Вывод средств</h3>
                                 <p class="advantages-card__text">Партнер может выводить средства, которые начисляются за каждый заказ на кошелек в личном кабинете United Market</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="advantages-card">
                                 <h3 class="advantages-card__title">Статистика заказов</h3>
                                 <p class="advantages-card__text">В личном кабинете вы можете смотреть статистику заказов и выплаты по ним</p>
                             </div>
                         </div>
+
                         <div class="swiper-slide">
                             <div class="advantages-card">
                                 <h3 class="advantages-card__title">Блокчейн</h3>
@@ -244,6 +249,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- If we need navigation buttons -->
                     <div class="um-advantages__swiper-btn-wrap" >
                         <div class="swiper-button-prev"></div>
@@ -552,7 +558,7 @@
                     <form action="#" class="d-flex flex-column f-form align-items-start">
                         <input class="f-form__input border-bottom mb-4" type="text" placeholder="Email" name="email">
                         <input class="f-form__input border-bottom" type="text" placeholder="Сообщение" name="messenge">
-                        <button class="f-form__btn-send" type="button" data-bs-toggle="modal" data-bs-target="#thankYouModal">Отправить</button>
+                        <button class="f-form__btn-send hover--btn-case" type="button" data-bs-toggle="modal" data-bs-target="#thankYouModal">Отправить</button>
                     </form>
                 </li>
             </ul>
@@ -572,28 +578,28 @@
             <div class="footer__block-3 f-block-bottom border-top mt-45">
 
                 <ul class="footer_menu f-menu">
-                    <li><a href="https://unitedmarket.org/info/o-nas">О нас</a></li>
-                    <li><a href="https://unitedmarket.org/partner">Новым партнерам</a></li>
-                    <li><a href="https://unitedmarket.org/investor_page">Инвесторам</a></li>
-                    <li><a href="https://unitedmarket.org/info/dejstvuyushim-partneram">Wiki</a></li>
-                    <li><a href="https://unitedmarket.org/info/politika-konfidencialnosti">Политика конфиденциальности</a></li>
+                    <li><a class="hover--link" href="https://unitedmarket.org/info/o-nas">О нас</a></li>
+                    <li><a class="hover--link" href="https://unitedmarket.org/partner">Новым партнерам</a></li>
+                    <li><a class="hover--link" href="https://unitedmarket.org/investor_page">Инвесторам</a></li>
+                    <li><a class="hover--link" href="https://unitedmarket.org/info/dejstvuyushim-partneram">Wiki</a></li>
+                    <li><a class="hover--link" href="https://unitedmarket.org/info/politika-konfidencialnosti">Политика конфиденциальности</a></li>
                 </ul>
 
                 <ul class="footer__social mw-180 justify-content-between">
                     <li class="footer__one">
-                        <a href="https://vk.com/unitedmarketorg" target="_blank">
+                        <a class="hover--social" href="https://vk.com/unitedmarketorg" target="_blank">
                             <img src="images/vk.svg" alt="vk">
                         </a>
                     </li>
 
                     <li class="footer__one">
-                        <a href="https://www.youtube.com/channel/UCns7aIJwqWZFPPwWXd6iq6g" target="_blank">
+                        <a class="hover--social" href="https://www.youtube.com/channel/UCns7aIJwqWZFPPwWXd6iq6g" target="_blank">
                             <img src="images/youtube.svg" alt="youtube">
                         </a>
                     </li>
                     
                     <li class="footer__one">
-                        <a href="https://t.me/unitedmarket" target="_blank">
+                        <a class="hover--social" href="https://t.me/unitedmarket" target="_blank">
                             <img src="images/telegram.svg" alt="telegram">
                         </a>
                     </li>

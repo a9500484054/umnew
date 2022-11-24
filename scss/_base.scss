@@ -78,6 +78,7 @@ input[type="radio"].visually-hidden {
 
 .overflow--active {
   overflow: hidden;
+  margin-right: 16px;
 }
 
 .nowrap {
@@ -141,7 +142,6 @@ input[type="radio"].visually-hidden {
     }
   }
   &--btn-case {
-    transition-duration: .5s;
     transition: color .5s, background-color .5s;
     &:focus,
     &:hover {
@@ -151,6 +151,16 @@ input[type="radio"].visually-hidden {
     }
     &:active {
       opacity: .6;
+    }
+  }
+  &--social {
+    transition-duration: .5s;
+    &:focus,
+    &:hover {
+        opacity: .6; 
+    }
+    &:active {
+      opacity: .3;
     }
   }
 }

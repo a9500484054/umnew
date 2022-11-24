@@ -63,11 +63,15 @@
         background-color: #FFFFFF;
         transition-duration: .5s;
     }
+    
     &--active {
         span {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 19px;
+            left: 12px;
+        }
+        & span:nth-child(2) {
+            display: none;
         }
         & span:first-child {
             transform: rotate(45deg);
@@ -104,8 +108,6 @@
         margin-right: 8%;
     }
 }
-
-
 
 @media (min-width: $screen-xl) {
 
