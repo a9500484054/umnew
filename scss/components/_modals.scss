@@ -1,4 +1,5 @@
 .lid-modal {
+    z-index: 99999999999999999999999999;
     .modal-dialog {
         max-width: 629px;
         max-height: 618px;
@@ -63,6 +64,7 @@
 }
 
 .thank-modal {
+    z-index: 99999999999999999999999999;
     .modal-content {
         max-width: 629px;
         min-height: 349px;

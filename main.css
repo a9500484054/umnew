@@ -465,7 +465,7 @@ input[type=radio].visually-hidden {
 .header {
   position: fixed;
   width: 100%;
-  background: rgba(251, 251, 251, 0.2823529412);
+  background: rgba(251, 251, 251, 0.8549019608);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   z-index: 9999;
@@ -1488,6 +1488,9 @@ input[type=radio].visually-hidden {
     height: 15px;
   }
 }
+.lid-modal {
+  z-index: 100000000000000020000000000;
+}
 .lid-modal .modal-dialog {
   max-width: 629px;
   max-height: 618px;
@@ -1541,6 +1544,9 @@ input[type=radio].visually-hidden {
   .lid-modal__text {
     font-size: 20px;
   }
+}
+.thank-modal {
+  z-index: 100000000000000020000000000;
 }
 .thank-modal .modal-content {
   max-width: 629px;
