@@ -3,11 +3,12 @@
     height: 0;
     overflow: hidden;
     
-    position: absolute;
+    position: fixed;
     top: 75px;
     left: 0;
     background-color: #FBFBFB;
     transition: height .5s;
+    z-index: 999999999999999999;
     &__list {
         margin-top: 50px;
         margin-bottom: 56px;
